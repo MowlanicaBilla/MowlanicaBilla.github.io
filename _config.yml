@@ -31,7 +31,8 @@ url: "https://mowlanicabilla.github.io/" # the base hostname & protocol for your
 # github_username:  jekyll
 
 # Build settings
-theme: jekflix
+# theme: jekflix
+remote_theme : thiagorossener/jekflix-template
 plugins:
   - jekyll-feed
   - github-pages
