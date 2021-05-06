@@ -1,0 +1,29 @@
+[
+  
+  
+  
+    {
+      "title"    : "Welcome to Jekyll!",
+      "tags"     : "",
+      "categories" : "",
+      "url"      : "/mowlanica_blog/welcome-to-jekyll/",
+      "date"     : "05/05/2021"
+    } ,
+  
+    {
+      "title"    : "This is a new blogpost",
+      "tags"     : "",
+      "categories" : "",
+      "url"      : "/mowlanica_blog/my-first-blog-post/",
+      "date"     : "05/04/2021"
+    } ,
+  
+    {
+      "title"    : "Welcome to the desert of the real",
+      "tags"     : "welcome and blog",
+      "categories" : "blog",
+      "url"      : "/mowlanica_blog/welcome-to-the-desert-of-the-real/",
+      "date"     : "05/03/2021"
+    } 
+  
+]
