@@ -1,5 +1,4 @@
 ---
-date: 2018-04-21 12:26:40
 layout: post
 title: Candy, candies, candy!
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
