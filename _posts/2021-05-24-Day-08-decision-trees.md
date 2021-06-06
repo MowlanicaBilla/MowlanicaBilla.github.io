@@ -965,8 +965,10 @@ $(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heig
    <span>It helps to find all of the possible outcomes for a given problem.</span>
    <span>There is very little need for data cleaning in decision trees compared to other Machine Learning algorithms.</span>
    <span>Handles both numerical as well as categorical values</span>
+   </div>
     <br>
    <b> Disadvantages </b>
+   <div class="mylist type1">
    <span>Too many layers of decision tree make it extremely complex sometimes.</span>
     <span>It may result in overfitting ( which can be resolved using the Random Forest algorithm) due to the amount of specificity we look at, leading to smaller sample of events.</span>
     <span>For the more number of the class labels, the computational complexity of the decision tree increases.</span>
