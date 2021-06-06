@@ -957,7 +957,8 @@ $(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heig
 <div class="accordion">
 <h3>1. Advantages and Disadvantages of Decision tree</h3>
   <div>
-    <p style="margin: 0;"><b>Advantages</b>
+    <p style="margin: 0;">
+    <b>Advantages</b></p>
     <div class="mylist type1">
       <span>It is simple to implement and it follows a flow chart type structure that resembles human-like decision making.</span> <span>It proves to be very useful for decision-related problems.</span> <span>It helps to find all of the possible outcomes for a given problem.</span> <span>There is very little need for data cleaning in decision trees compared to other Machine Learning algorithms.</span> <span>Handles both numerical as well as categorical values</span>
     </div><br>
@@ -968,7 +969,6 @@ $(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heig
       <span>For the more number of the class labels, the computational complexity of the decision tree increases.</span> 
       <span>Gives optimal solution but not globally optimal solution.</span> 
       <span>Cannot explain the marginal effect</span>
-    </p>
     </div>
   </div>
   <h3>2. Is Decision tree(tree based algorithms) better than linear models?</h3>
