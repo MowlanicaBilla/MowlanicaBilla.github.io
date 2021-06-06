@@ -953,6 +953,8 @@ So we know pruning is better. But how to implement it in decision tree? The idea
     2. If there is a high non-linearity & complex relationship between dependent & independent variables, a tree model will outperform a classical regression method.
     3. If you need to build a model which is easy to explain to people, a decision tree model will always do better than a linear model. Decision tree models are even simpler to interpret than linear regression!
 
+---
+
 3. **Are Decision Trees Robust to Outliers**
 Yes. Because decision trees divide items by lines, so it does not difference how far is a point from lines.
 Most likely outliers will have a negligible effect because the nodes are determined based on the sample proportions in each split region (and not on their absolute values).
@@ -961,9 +963,11 @@ However, different implementations to choose split points of continuous variable
 
 ![](https://i.stack.imgur.com/OBSfq.png) ![](https://i.stack.imgur.com/OBSfq.png)
 
+---
 4. **Decision Tree Classifier with Majority vote (Is 50% a majority vote)**
 The goal of ID3 is to get the purest nodes possible ( ironically that is what contributes to its problem of overfitting), so 50% is not pure at all, the data under that node is equally likely to be in one of the classes which makes peedicition tricky, it would be better to grow the tree further and find nodes which are more pure than atleast 50%.
 
+---
 
 5. ""Why do decision trees have low accuracy?""
 First a common misconception, Decision trees are deterministic and extremely greedy. A random forest is not a decision tree, it as an ensemble of decision trees selected in a way to avoid the potential pitfall of a decision tree.
@@ -979,6 +983,8 @@ Because they are greedy and deterministic they don't normally give their best re
 
 In short your question is right, and that problem has been solved historically with random forest and gradient boosting.
 
+---
+
 6. ""How do decision tree learning algorithms deal with missing values (under the hood)..?""
 There are several methods used by various decision trees. Simply ignoring the missing values (like ID3 and other old algorithms does) or treating the missing values as another category (in case of a nominal feature) are not real handling missing values. However those approaches were used in the early stages of decision tree development.
 
@@ -991,16 +997,28 @@ I know about the following approaches to distribute the missing value instances 
 * Distribute randomly to only one single child node, eventually according with a categorical distribution (I have seen that in various implementations of C45 and CART for a faster running time)
 * Build, sort and use surrogates to distribute instances to a child node, where surrogates are input features which resembles best how the test feature send data instances to left or right child node (CART, if that fails, the majority rule is used)
 
+---
 7. What are the scenarios where Decision Tree works well
+
+---
 8. Decision Tree Low Bias And High Variance
+
+---
 9. Hyperparameter Techniques
+
+---
 10. Library used for constructing decision tree
 
+---
 11. **Why are we growing decision trees via entropy instead of the classification error?**
 [Find the answer here](https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decisiontree-error-vs-entropy.md)
 
+---
+
 12. **What are the disadvantages of using classic decision tree algorithm for a large dataset?**
 [Find the answer here](https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-disadvantages.md)
+
+---
 
 13. **Why are implementations of decision tree algorithms usually binary and what are the advantages of the different impurity metrics?**
 [Find the answer here](https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-binary.md)
