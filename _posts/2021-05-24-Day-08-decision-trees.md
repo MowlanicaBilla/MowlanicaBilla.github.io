@@ -957,18 +957,23 @@ $(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heig
 <div class="accordion">
 <h3>1. Advantages and Disadvantages of Decision tree</h3>
   <div>
-    <p><b>Advantages</b></p>
+    <p style="margin: 0;"><b>Advantages</b>
     <div class="mylist type1">
       <span>It is simple to implement and it follows a flow chart type structure that resembles human-like decision making.</span> <span>It proves to be very useful for decision-related problems.</span> <span>It helps to find all of the possible outcomes for a given problem.</span> <span>There is very little need for data cleaning in decision trees compared to other Machine Learning algorithms.</span> <span>Handles both numerical as well as categorical values</span>
     </div><br>
     <b>Disadvantages</b>
     <div class="mylist type1">
-      <span>Too many layers of decision tree make it extremely complex sometimes.</span> <span>It may result in overfitting ( which can be resolved using the Random Forest algorithm) due to the amount of specificity we look at, leading to smaller sample of events.</span> <span>For the more number of the class labels, the computational complexity of the decision tree increases.</span> <span>Gives optimal solution but not globally optimal solution.</span> <span>Cannot explain the marginal effect</span>
+      <span>Too many layers of decision tree make it extremely complex sometimes.</span> 
+      <span>It may result in overfitting ( which can be resolved using the Random Forest algorithm) due to the amount of specificity we look at, leading to smaller sample of events.</span> 
+      <span>For the more number of the class labels, the computational complexity of the decision tree increases.</span> 
+      <span>Gives optimal solution but not globally optimal solution.</span> 
+      <span>Cannot explain the marginal effect</span>
+    </p>
     </div>
   </div>
   <h3>2. Is Decision tree(tree based algorithms) better than linear models?</h3>
   <div>
-    <p><i>“If I can use logistic regression for classification problems and linear regression for regression problems, why is there a need to use trees?”</i> Many of us have this question. And, this is a valid one too.<br>
+    <p style="margin: 0;"><i>“If I can use logistic regression for classification problems and linear regression for regression problems, why is there a need to use trees?”</i> Many of us have this question. And, this is a valid one too.<br>
     Actually, you can use any algorithm. It is dependent on the type of problem you are solving. Let’s look at some key factors which will help you to decide which algorithm to use:</p>
     <div class="mylist type2">
       <span>If the relationship between dependent & independent variable is well approximated by a linear model, linear regression will outperform tree based model.</span> <span>If there is a high non-linearity & complex relationship between dependent & independent variables, a tree model will outperform a classical regression method.</span> <span>If you need to build a model which is easy to explain to people, a decision tree model will always do better than a linear model. Decision tree models are even simpler to interpret than linear regression!</span>
@@ -976,17 +981,17 @@ $(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heig
   </div>
   <h3>3. Are Decision Trees Robust to Outliers</h3>
   <div>
-    <p>Yes. Because decision trees divide items by lines, so it does not difference how far is a point from lines. Most likely outliers will have a negligible effect because the nodes are determined based on the sample proportions in each split region (and not on their absolute values).<br>
+    <p style="margin: 0;">Yes. Because decision trees divide items by lines, so it does not difference how far is a point from lines. Most likely outliers will have a negligible effect because the nodes are determined based on the sample proportions in each split region (and not on their absolute values).<br>
     However, different implementations to choose split points of continuous variables exist. Some consider all possible split points, others percentiles. But, in some poorly chosen cases (e.g. dividing the range between min and max in equidistant split points), outliers might lead to sub-optimal split points. But you shouldn't encounter these scenarios in popular implementations.<br>
     <img src="https://i.stack.imgur.com/OBSfq.png" alt="OBSfq"> <img src="https://i.stack.imgur.com/OBSfq.png" alt="OBSfq"></p>
   </div>
   <h3>4. Decision Tree Classifier with Majority vote (Is 50% a majority vote)</h3>
   <div>
-    <p>The goal of ID3 is to get the purest nodes possible ( ironically that is what contributes to its problem of overfitting), so 50% is not pure at all, the data under that node is equally likely to be in one of the classes which makes peedicition tricky, it would be better to grow the tree further and find nodes which are more pure than atleast 50%.</p>
+    <p style="margin: 0;">The goal of ID3 is to get the purest nodes possible ( ironically that is what contributes to its problem of overfitting), so 50% is not pure at all, the data under that node is equally likely to be in one of the classes which makes peedicition tricky, it would be better to grow the tree further and find nodes which are more pure than atleast 50%.</p>
   </div>
   <h3>5. Why do decision trees have low accuracy?</h3>
   <div>
-    <p>First a common misconception, Decision trees are deterministic and extremely greedy. A random forest is not a decision tree, it as an ensemble of decision trees selected in a way to avoid the potential pitfall of a decision tree.<br>
+    <p style="margin: 0;">First a common misconception, Decision trees are deterministic and extremely greedy. A random forest is not a decision tree, it as an ensemble of decision trees selected in a way to avoid the potential pitfall of a decision tree.<br>
     In wikipedia ` ` They are often relatively inaccurate. Many other predictors perform better with similar data. This can be remedied by replacing a single decision tree with a random forest of decision trees... Because they are greedy and deterministic if you add one row more or take one out the result can be different, also that they tend to overfit. That is my understanding of low accuracy in this sentence.<br>
     In elements of statistical learning ` ` Trees have one aspect that prevents them from being the ideal tool for predictive learning, namely inaccuracy. They seldom provide predictive accuracy comparable to the best that can be achieved with the data at hand. As seen in Section 10.1, boosting decision trees improves their accuracy, often dramatically.<br>
     Because they are greedy and deterministic they don't normally give their best result. That is why random forest and gradient boosting appeared and they are extremely good. They replace this pitfall of decision trees.<br>
@@ -995,7 +1000,7 @@ $(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heig
   </div>
   <h3>6. How do decision tree learning algorithms deal with missing values (under the hood)..?</h3>
   <div>
-    <p>There are several methods used by various decision trees. Simply ignoring the missing values (like ID3 and other old algorithms does) or treating the missing values as another category (in case of a nominal feature) are not real handling missing values. However those approaches were used in the early stages of decision tree development.<br>
+    <p style="margin: 0;">There are several methods used by various decision trees. Simply ignoring the missing values (like ID3 and other old algorithms does) or treating the missing values as another category (in case of a nominal feature) are not real handling missing values. However those approaches were used in the early stages of decision tree development.<br>
     The real handling approaches to missing data does not use data point with missing values in the evaluation of a split. However, when child nodes are created and trained, those instances are distributed somehow.<br>
     <br>
     Following are the approaches to distribute the missing value instances to child nodes:<br></p>
@@ -1005,32 +1010,31 @@ $(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heig
   </div>
   <h3>7. What are the scenarios where Decision Tree works well..?</h3>
   <div>
-    <p>Answer goes here</p>
+    <p style="margin: 0;">Answer goes here</p>
   </div>
   <h3>8. Why does Decision Tree have Low Bias And High Variance..?</h3>
   <div>
-    <p>Answer goes here</p>
+    <p style="margin: 0;">Answer goes here</p>
   </div>
-</div>
 <h3>9. What are the Hyperparameter Techniques for Decision tree..?</h3>
 <div>
-  <p>Answer goes here</p>
+  <p style="margin: 0;">Answer goes here</p>
 </div>
 <h3>10. What are the libraries used for constructing decision tree..?</h3>
 <div>
-  <p>Answer goes here</p>
+  <p style="margin: 0;">Answer goes here</p>
 </div>
 <h3>11. Why are we growing decision trees via entropy instead of the classification error?</h3>
 <div>
-  <p><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decisiontree-error-vs-entropy.md">&gt;Find the answer here</a></p>
+  <p style="margin: 0;"><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decisiontree-error-vs-entropy.md">Find the answer here</a></p>
 </div>
 <h3>12. What are the disadvantages of using classic decision tree algorithm for a large dataset?</h3>
 <div>
-  <p><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-disadvantages.md">&gt;Find the answer here</a></p>
+  <p style="margin: 0;"><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-disadvantages.md">Find the answer here</a></p>
 </div>
 <h3>13. Why are implementations of decision tree algorithms usually binary and what are the advantages of the different impurity metrics?</h3>
 <div>
-  <p><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-binary.md">&gt;Find the answer here</a></p>
+  <p style="margin: 0;"><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-binary.md">Find the answer here</a></p>
 </div>
 ---
 
