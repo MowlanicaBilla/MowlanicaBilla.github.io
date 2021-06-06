@@ -955,20 +955,15 @@ $(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heig
 
 
 <div class="accordion">
-<h3>1. Advantages and Disadvantages of Decision tree</h3>
+  <h3>1. Advantages and Disadvantages of Decision tree</h3>
   <div>
-    <p style="margin: 0;">
-    <b>Advantages</b></p>
+    <p style="margin: 0;"><b>Advantages</b></p>
     <div class="mylist type1">
       <span>It is simple to implement and it follows a flow chart type structure that resembles human-like decision making.</span> <span>It proves to be very useful for decision-related problems.</span> <span>It helps to find all of the possible outcomes for a given problem.</span> <span>There is very little need for data cleaning in decision trees compared to other Machine Learning algorithms.</span> <span>Handles both numerical as well as categorical values</span>
     </div><br>
     <b>Disadvantages</b>
     <div class="mylist type1">
-      <span>Too many layers of decision tree make it extremely complex sometimes.</span> 
-      <span>It may result in overfitting ( which can be resolved using the Random Forest algorithm) due to the amount of specificity we look at, leading to smaller sample of events.</span> 
-      <span>For the more number of the class labels, the computational complexity of the decision tree increases.</span> 
-      <span>Gives optimal solution but not globally optimal solution.</span> 
-      <span>Cannot explain the marginal effect</span>
+      <span>Too many layers of decision tree make it extremely complex sometimes.</span> <span>It may result in overfitting ( which can be resolved using the Random Forest algorithm) due to the amount of specificity we look at, leading to smaller sample of events.</span> <span>For the more number of the class labels, the computational complexity of the decision tree increases.</span> <span>Gives optimal solution but not globally optimal solution.</span> <span>Cannot explain the marginal effect</span>
     </div>
   </div>
   <h3>2. Is Decision tree(tree based algorithms) better than linear models?</h3>
@@ -1016,25 +1011,26 @@ $(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heig
   <div>
     <p style="margin: 0;">Answer goes here</p>
   </div>
-<h3>9. What are the Hyperparameter Techniques for Decision tree..?</h3>
-<div>
-  <p style="margin: 0;">Answer goes here</p>
-</div>
-<h3>10. What are the libraries used for constructing decision tree..?</h3>
-<div>
-  <p style="margin: 0;">Answer goes here</p>
-</div>
-<h3>11. Why are we growing decision trees via entropy instead of the classification error?</h3>
-<div>
-  <p style="margin: 0;"><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decisiontree-error-vs-entropy.md">Find the answer here</a></p>
-</div>
-<h3>12. What are the disadvantages of using classic decision tree algorithm for a large dataset?</h3>
-<div>
-  <p style="margin: 0;"><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-disadvantages.md">Find the answer here</a></p>
-</div>
-<h3>13. Why are implementations of decision tree algorithms usually binary and what are the advantages of the different impurity metrics?</h3>
-<div>
-  <p style="margin: 0;"><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-binary.md">Find the answer here</a></p>
+  <h3>9. What are the Hyperparameter Techniques for Decision tree..?</h3>
+  <div>
+    <p style="margin: 0;">Answer goes here</p>
+  </div>
+  <h3>10. What are the libraries used for constructing decision tree..?</h3>
+  <div>
+    <p style="margin: 0;">Answer goes here</p>
+  </div>
+  <h3>11. Why are we growing decision trees via entropy instead of the classification error?</h3>
+  <div>
+    <p style="margin: 0;"><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decisiontree-error-vs-entropy.md">Find the answer here</a></p>
+  </div>
+  <h3>12. What are the disadvantages of using classic decision tree algorithm for a large dataset?</h3>
+  <div>
+    <p style="margin: 0;"><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-disadvantages.md">Find the answer here</a></p>
+  </div>
+  <h3>13. Why are implementations of decision tree algorithms usually binary and what are the advantages of the different impurity metrics?</h3>
+  <div>
+    <p style="margin: 0;"><a href="https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-binary.md">Find the answer here</a></p>
+  </div>
 </div>
 ---
 
