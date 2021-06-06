@@ -1008,18 +1008,28 @@ In short your question is right, and that problem has been solved historically w
 >! [Find the answer here](https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-binary.md)
 
 
-  <div class="questionBlock">
-   <span class="question" id="Q1" onclick="expand('A1')"><h2><img id="clickIcon" src='https://static.squarespace.com/static/53453ebbe4b0d46770eb7505/t/534e267fe4b06702647aabd8/1397630592016/arrow-right.png?format=300w'> Question 1</h2></span>
-   <span class="answer" id="A1"><p>Here is answer 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span>
- </div>
- <div class="questionBlock">
-   <span class="question" id="Q2" onclick="expand('A2')"><h2><img id="clickIcon" src='https://static.squarespace.com/static/53453ebbe4b0d46770eb7505/t/534e267fe4b06702647aabd8/1397630592016/arrow-right.png?format=300w'> Question 2</h2></span>
-   <span class="answer" id="A2"><p>Here is answer 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span>
- </div>
- <div class="questionBlock">
-   <span class="question" id="Q3" onclick="expand('A3')"><h2><img id="clickIcon" src='https://static.squarespace.com/static/53453ebbe4b0d46770eb7505/t/534e267fe4b06702647aabd8/1397630592016/arrow-right.png?format=300w'> Question 3</h2></span>
-   <span class="answer" id="A3"><p>Here is answer 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span>
- </div>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<script>
+$(function() {
+$( ".accordion" ).accordion();
+$(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heightStyle: "content" });
+});
+</script>
+
+<div class="accordion">
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+</div>
+
 
 
 ---
