@@ -924,10 +924,21 @@ So we know pruning is better. But how to implement it in decision tree? The idea
 3. Suppose a split is giving us a gain of say -10 (loss of 10) and then the next split on that gives us a gain of 20. A simple decision tree will stop at step 1 but in pruning, we will see that the overall gain is +10 and keep both leaves.
 
 ## Most frequently asked questions in Decision Trees
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
-1. **Advantages and Disadvantages of Decision tree**
->!
-##### Advantages
+<script>
+$(function() {
+$( ".accordion" ).accordion();
+$(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heightStyle: "content" });
+});
+</script>
+
+<div class="accordion">
+<h3>1. Advantages and Disadvantages of Decision tree</h3>
+   <div>
+     <p>##### Advantages
 * It is simple to implement and it follows a flow chart type structure that resembles human-like decision making.
 * It proves to be very useful for decision-related problems.
 * It helps to find all of the possible outcomes for a given problem.
@@ -939,7 +950,67 @@ So we know pruning is better. But how to implement it in decision tree? The idea
 * It may result in overfitting ( which can be resolved using the Random Forest algorithm) due to the amount of specificity we look at, leading to smaller sample of events.
 * For the more number of the class labels, the computational complexity of the decision tree increases.
 * Gives optimal solution but not globally optimal solution.
-* Cannot explain the marginal effect  |
+* Cannot explain the marginal effect
+</p>
+   </div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+</div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+</div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+</div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+</div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+</div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+</div>
+<h3>question goes here</h3>
+   <div>
+     <p>Answer goes here</p>
+   </div>
+
+**
+>!
+
 
 2. **Is Decision tree(tree based algorithms) better than linear models?**
 
@@ -1008,27 +1079,7 @@ In short your question is right, and that problem has been solved historically w
 >! [Find the answer here](https://github.com/rasbt/python-machine-learning-book/blob/master/faq/decision-tree-binary.md)
 
 
-<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
-<script>
-$(function() {
-$( ".accordion" ).accordion();
-$(".accordion").accordion({ header: "h3", collapsible: true, active: false ,heightStyle: "content" });
-});
-</script>
-
-<div class="accordion">
-<h3>question goes here</h3>
-   <div>
-     <p>Answer goes here</p>
-   </div>
-<h3>question goes here</h3>
-   <div>
-     <p>Answer goes here</p>
-   </div>
-</div>
 
 
 
