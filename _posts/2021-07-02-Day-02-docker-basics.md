@@ -2,12 +2,13 @@
 layout: post
 title: Docker - Basic steps
 subtitle: 'A software platform that simplifies the process of building, running, managing and distributing applications.'
-description: >-
+description: >- 
+    'A container management software'
 
 image: >-
-  https://www.kepner-tregoe.com/default/assets/Image/Decisions%20Min.jpg
+  https://blog.adacore.com/uploads/_2400x1200_crop_center-center_none/iStock-1144628524.jpg
 optimized_image: >-
-  https://www.kepner-tregoe.com/default/assets/Image/Decisions%20Min.jpg
+  https://blog.adacore.com/uploads/_2400x1200_crop_center-center_none/iStock-1144628524.jpg
 category: blog
 tags:
   - docker
